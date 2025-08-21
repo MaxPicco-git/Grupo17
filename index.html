@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>  <meta charset="utf-8">
+    <title>Streaming y Videojuegos</title>
+</head>
+
+  <body>
+    <h1>TRABAJO PRACTICO-FUNDAMENTOS COMPUTACION</h1>
+    <h2>Universidad: Universidad Autónoma de Entre Ríos | Facultad de Ciencia y Tecnología | Año Lectivo 2025</h2>
+    <ul>
+        <li>Carrera: Licenciatura en Sistemas de Informacion</li>
+        <li>Cátedra: Fundamentos de Computación</li>
+        <li>Trabajo Práctico: N° 1 - Streaming de videojuegos</li>
+        <li>Comisión: OV- Fundamentos de Computacion COM 2</li>
+        <li>Fecha de entrega: 31 de octubre de 2025</li> 
+    </ul>
+
+    <hr>
+
+    <h2>Profesores:</h2>
+    <ul>
+       <li>Bioing. Ismael Cassi</li>
+       <li>Lic. Paolo Orundés Cardinali</li>
+    </ul>
+
+    <hr>
+
+    <h2>Integrantes:</h2>
+    <ul>
+        <li>Maximo Gonzalez Piccoli</li>
+        <li>Fernando Tentor Carmody</li>
+        <li>Ignacio Acevedo</li>
+        <li>Juan Andres Ivan Gonzalez</li>
+        
+    </ul>
+    <hr>
+    <h2>Introducción</h2>
+
+<p>
+El streaming de videojuegos pasó de ser un hobby de nicho a una industria con miles de millones 
+de dólares.<br>
+En 2024 se vieron más de 32,5 mil millones de horas de directos (+12% interanual), y el mercado 
+global de game streaming fue valuado en ~USD 9,8 mil millones en 2023 con proyección de crecimiento 
+sostenido hacia 2030.<br>
+Plataformas como Twitch y YouTube permiten que cualquier jugador transmita en vivo, interactúe con 
+su audiencia y construya comunidad, pero para hacerlo con calidad estable se necesita entender el 
+hardware y el software involucrados.
+</p>
+
+<p>
+Transmitir o hacer directo no solo implica ejecutar el juego, tambien implica capturar imagen/sonido y <em>codificar</em> el video en tiempo real.<br>
+Hoy los codificadores de hardware (NVENC en NVIDIA, AMF en AMD, Quick Sync en Intel) reducen el 
+trabajo del CPU y logran buena calidad con poco impacto en el rendimiento del juego usando o esforzando un poco mas nuestra grafica.<br>
+Por otr lado OBS Studio es estándar abierto y gratuito soporta una amplia variedad de codificadores además de x264 por software que utilizaria mas la CPU.
+</p>
+
+<p>
+En cuanto a calidad de emisión, los bitrates recomendados orientan el objetivo de red y equipo:<br>
+• En YouTube se sugieren 6 Mbps para 720p60 y 10–12 Mbps para 1080p60.<br>
+• En Twitch, su límite práctico estandar ronda los 6 Mbps para 1080p60 y 3–4,5 Mbps para 720p60.<br>
+Estos numeros ayudan a pensar cuanta CPU/GPU, memoria, almacenamiento y conexión de 
+subida se necesita.
+</p>
+
+<p>
+En este trabajo definiremos una configuración capaz de ejecutar el juego elegido con buen rendimiento 
+y transmitir al menos en 6 bitrates 1080p30 pero idealmente en 1080p60 12 bitrates, respetando un presupuesto máximo de USD 1000 justificando cada decisión y analizando los precios de tiendas.
+</p>
+
+<hr>
+
+<h2>Videojuego Seleccionado: Counter-Strike 2 (CS2)</h2>
+
+<p>
+Counter-Strike 2 es la version más reciente del famoso Counter-Strike: Global Offensive desarrollado por Valve usando el motor Source 2. <br>
+Lanzado en septiembre de 2023, trae mejoras gráficas, físicas del humo, una nueva arquitectura de servidor y un enfoque competitivo más moderno. Sin embargo, dejó de ser compatible con macOS, DirectX 9 y sistemas de 32 bits.<br>
+Soporta únicamente Windows y Linux de 64 bits. 
+</p>
+
+<p>
+Esto mejora el realismo y la jugabilidad, pero también exige más del hardware. Aun así, los requerimientos mínimos siguen siendo accesibles, lo que permite que muchos rigs de la última década corran el juego con fluidez. 
+</p>
+
+<hr>
+
+<h3>Requerimientos del Sistema</h3>
+<p>
+  Los <strong>requerimientos del sistema</strong> son una guía básica para saber si un juego puede ejecutarse en una PC.<br>
+Sin embargo, los <strong>mínimos</strong> suelen ser engañosos: permiten abrir el juego, pero no garantizan un rendimiento fluido.<br>
+En títulos competitivos como CS2, cumplir solo con lo mínimo rara vez alcanza para jugar a 60 FPS estables.<br>
+Por eso, los <strong>recomendados</strong> son la referencia real para tener una buena experiencia.
+</p>
+
+<p><strong>Mínimos (según Steam, distribuidor de Counter-Strike 2):</strong><br>
+• Sistema operativo: Windows 10 (o similar en Linux)<br>
+• Procesador: 4 hilos reales (ej. Intel Core i5-750 o superior)<br>
+• Memoria RAM: 8 GB<br>
+• Gráficos: GPU compatible con DirectX 11 y Shader Model 5.0, con al menos 1 GB VRAM<br>
+• Almacenamiento: ~85 GB disponibles (más si se usan mapas del Workshop)
+</p>
+
+<p><strong>Recomendados (basado en análisis de fuentes especializadas):</strong><br>
+• OS: Windows 10 o 11 64-bit<br>
+• CPU: Intel Core i5-7500 o Ryzen 5 1600 (mínimo); idealmente Core i7-9700 o Ryzen 7 2700X<br>
+• RAM: 16 GB<br>
+• GPU: GTX 1060 o RX 580 (mínimo recomendado); para mayor rendimiento: RTX 2070 o Radeon RX 5700 XT<br>
+• Storage: ~60 GB (aunque Steam indica 85 GB)
+</p>
+
+
+
+<hr>
+
+
+  </body>
+
+
+</html>
