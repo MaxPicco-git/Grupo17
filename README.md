@@ -6,7 +6,7 @@
 
 ## Integrantes
 - Acevedo Ignacio
-- ,aximo G. Piccoli
+- Maximo G. Piccoli
 - Juan Gonzalez
 - Fernando Tentor
 
