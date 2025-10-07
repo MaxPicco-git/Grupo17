@@ -8,5 +8,5 @@
 - Acevedo Ignacio
 - Maximo G. Piccoli
 - Juan Gonzalez
-- Fernando Tentor
+- Fernando Tentor Carmody
 
